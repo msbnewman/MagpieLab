@@ -32,12 +32,12 @@ Now that we have six random responses, let’s use the getResponse() method to m
 1. Have it respond “Is that your favorite class?” when the statement contains the key words “math” or “science.”  
   For example, a possible statement and response would be: 
 > Statement: I go to math after lunch.  
-> Response: Is that your favorite class?
+> Response: Is that your favorite class?  
 **Bonus: Make it respond to additional class-related key words: "biology", "bio", "chemistry", "chem", etc.**  
 2. Have it respond “Tell me more about your pets” when the statement contains the word “dog” or “cat.”
   For example, a possible statement and response would be:
 > Statement: I like my cat Mittens.  
-> Response: Tell me more about your pets.
+> Response: Tell me more about your pets.  
 **Bonus: Make it respond to additional pet-related key words: "hamster", "goldfish", "parrot", etc.**  
 3. Have it respond favorably when the statement contains the name of your school.  
   For example, if “the Isidore Newman School” was inputted, a possible statement and response would be: 
@@ -102,3 +102,4 @@ Test your code with several examples. Find an example of when this structure doe
 Return to the transformILike() method. Try running it with several examples, including "I like to dance" and "I like to eat ice cream." What do you notice?
 
 2. Revise your transformILike() method to differentiate between statements of the form "I like *something*" and "I like **to** *something*". For the "I like to" statements, make your code use a new response format, like "Why do you like to *something*?"
+
