@@ -152,7 +152,7 @@ Determine which trigger(s) you'd like to prioritize, and list them in order from
 ### getRandomResponse()
 An efficient way to keep track of multiple responses is with an array. In this activity you will see how an array makes handling multiple responses much easier. 
 
-Changing the internal structure of the code from nested if statements will make no difference to the output. The change in structure is called code refactoring. That’s one of the big benefits of dealing with methods as black boxes. As long as the class or methods perform the action required, the user does not care about how the action is implemented. 
+Changing the internal structure of the code from nested if statements will make no difference to the output. The change in structure is called *code refactoring*. That’s one of the big benefits of dealing with methods as black boxes. As long as the class or methods perform the action required, the user does not care about how the action is implemented. 
 
 1. Modify the getRandomResponse() method. The method should create an array of random responses. Choose one at random and return that String. 
 
@@ -197,4 +197,5 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
+
 
