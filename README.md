@@ -47,14 +47,14 @@ Now that we have six random responses, let’s use the getResponse() method to m
   For example, if “the Isidore Newman School” was inputted, a possible statement and response would be: 
 > Statement: I am a 10th grader at the Isidore Newman School.  
 > Response: The Isidore Newman School is the best school!  
-**Bonus: Make it respond to "Newman", "the Newman School", "Isidore Newman", etc. as well!**  
+**Bonus: Make it respond to "Newman", "Isidore Newman", etc. as well!**  
 **Bonus: Make it respond unfavorably to rival school(s)!**  
 4. Input check: Have the code check that the statement contains at least one character. You can do this by using the .trim() method to remove spaces from the beginning and end, and then checking the length of the trimmed string. If there are no characters, the response should prompt the user to enter something.
   For example, a possible statement and response would be:
 > Statement:  
 > Response: Say something, please.
 5. Pick two or more additional key words or phrases of your choice and create a custom response for each of those phrases.  
-  Ideas include: family members (mom, dad, brother, etc); sports; games; etc.
+  Ideas include: family members (mom, dad, brother, etc); sports; favorite fods; movies; etc.
 6. If the user's statement does not contain one of the key phrases described above, have the method call the getRandomResponse() method as before.
 
 ## Magpie3: Custom Adaptive Response (4 Steps)
@@ -72,9 +72,6 @@ Take a look at the findPhrase() method.
 > int pos4 = findPhrase("I love computer science class.", "computer", 4);
 
 ### Copy and paste the entire findPhrase() method into Magpie.java. You will need this!
-
-2. 
-
 
 ### transformIWant()
 
@@ -130,5 +127,6 @@ Return to the transformILike() method. Try running it with several examples, inc
 > I told my mom "Bye!" before I left for science class  
 
 Determine which trigger(s) you'd like to prioritize, and list them in order from highest to lowest priority. Make sure that your getResponse() method is structured to match this priority list!
+
 
 
