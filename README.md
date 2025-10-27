@@ -1,15 +1,17 @@
 # MagpieLab
 
 ## Magpie0: Project Setup
-Create a directory in your APCS folder called MagpieLab.  
+Navigate to your APCS directory on your desktop.  
 ><code>cd Desktop/APCS/</code>  
-><code>mkdir MagpieLab/</code>  
-
-Step into that directory.  
-><code>cd MagpieLab</code>  
 
 Clone your MagpieLab.
-><code>git clone **insertlablinkhere**</code>  
+><code>git clone **insertlablinkhere**</code>
+
+Step into your MagpieLab directory.
+><code>cd **LabName**</code>
+
+Open VSCode
+><code>code .</code>
 
 ## Magpie1: Random Response (2 Steps)
 Open the Magpie.java file.  
@@ -98,7 +100,7 @@ Return to the getResponse() method.
 
 4. Edit the getResponse() method to call the transformILike() method when the input string contains "I like" and call the transformIWant() method when the input string contains "I want".
 
-## Magpie4: Improved Adaptive Response
+## Magpie4: Improved Adaptive Response (3 Steps)
 
 Open the Magpie.java file.  
 
@@ -126,3 +128,4 @@ Return to the transformILike() method. Try running it with several examples, inc
 > I told my mom "Bye!" before I left for science class  
 
 Determine which trigger(s) you'd like to prioritize, and list them in order from highest to lowest priority. Make sure that your getResponse() method is structured to match this priority list!
+
