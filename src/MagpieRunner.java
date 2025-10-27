@@ -13,7 +13,7 @@ public class MagpieRunner
       String greeting = maggie.getGreeting();  // calls the getGreeting method on the maggie object
       System.out.println(greeting);
 
-      Scanner in = new Scanner (System.in);   // creates a Scanner object to read from the keyboard
+      Scanner in = new Scanner(System.in);   // creates a Scanner object to read from the keyboard
       
       String statement = in.nextLine();       // reads a line of text from the keyboard
 		
@@ -23,6 +23,7 @@ public class MagpieRunner
          System.out.println(response);         
          statement = in.nextLine();          // reads in the users response
       }
+      System.out.println("Bye!");
       in.close();                            // closes the input file
    }
 }
