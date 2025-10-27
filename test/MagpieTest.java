@@ -19,14 +19,13 @@ public class MagpieTest {
   public void magpie1(){
     Magpie maggie = new Magpie();
     HashSet<String> res = new HashSet<>();
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 60; i++) {
       res.add(maggie.getResponse("adkfghaweufh"));
     }
 
-    assertThat(res.contains("Interesting.")).isEqualTo(true);
-    assertThat(res.contains("Okay.")).isEqualTo(true);
-    assertThat(res.size()).isEqualTo(6);
-    
+    assertWithMessage("Expected: Interesting. as one of your random responses").that(res).contains("Interesting.");
+    assertWithMessage("Expected: Okay. as one of your random responses").that(res).contains("Okay.");
+    assertWithMessage("Expected: 6 unique random responses").that(res.size()).isEqualTo(6);    
   }
 
   @Test
@@ -145,6 +144,8 @@ public class MagpieTest {
     assertThat(str).isEqualTo("Why do you like talking to me?");
     str = maggie.getResponse("I usually talk to you.");
     assertThat(str).isEqualTo("Why do you usually talk to me?");
+    str = maggie.getResponse("I want to do homework with you.");
+    assertThat(str).isEqualTo("Why do you want to do homework with me?");
 
     /*
     System.out.println("Phrases to test:");
@@ -169,19 +170,74 @@ public class MagpieTest {
     Magpie maggie = new Magpie();
     String str;
     
-    str = maggie.getResponse("I don't like talking to you.");
-    assertThat(str).isEqualTo("Why don't you like talking to me?");
     str = maggie.getResponse("I don't like mustard.");
     assertThat(str).isEqualTo("Why don't you like mustard?");
     str = maggie.getResponse("I don't want to eat cake.");
     assertThat(str).isEqualTo("Why don't you want to eat cake?");
     str = maggie.getResponse("I don't want flip-flops.");
     assertThat(str).isEqualTo("Why don't you want flip-flops?");
-    str = maggie.getResponse("I don't think so.");
-    assertThat(str).isEqualTo("Why don't you think so?");
+    str = maggie.getResponse("I don't think that's true.");
+    assertThat(str).isEqualTo("Why don't you think that's true?");
     str = maggie.getResponse("I don't think I should do that.");
     assertThat(str).isEqualTo("Why don't you think you should do that?");
+  }
 
+  @Test
+  @Order(9)
+  @DisplayName("Test Magpie4: Improved Adaptive Response (1 & 2). I don't like you")
+  public void magpie43(){
+    Magpie maggie = new Magpie();
+    String str;
+
+    str = maggie.getResponse("I don't like talking to you.");
+    assertThat(str).isEqualTo("Why don't you like talking to me?");
+    
+    str = maggie.getResponse("I don't want to talk to you anymore.");
+    assertThat(str).isEqualTo("Why don't you want to talk to me anymore?");
+
+    str = maggie.getResponse("I don't want to talk to you anymore.");
+    assertThat(str).isEqualTo("Why don't you want to talk to me anymore?");
+
+    str = maggie.getResponse("I don't need help from you.");
+    assertThat(str).isEqualTo("Why don't you need help from me?");
+  }
+
+  @Test
+  @Order(10)
+  @DisplayName("Test Magpie5: Arrays 1. Refactored Random Response")
+  public void magpie51(){
+    Magpie maggie = new Magpie();
+    HashSet<String> res = new HashSet<>();
+    for (int i = 0; i < 100; i++) {
+      res.add(maggie.getResponse("adkfghawlkjheufh"));
+    }
+
+    assertWithMessage("Expected: Interesting. as one of your random responses").that(res).contains("Interesting.");
+    assertWithMessage("Expected: Okay. as one of your random responses").that(res).contains("Okay.");
+    assertWithMessage("Expected: 6 unique random responses").that(res.size()).isEqualTo(6);    
+  
+  }
+
+  @Test
+  @Order(11)
+  @DisplayName("Test Magpie5: Arrays 2. Student Shout-out")
+  public void magpie52(){
+    Magpie maggie = new Magpie();
+    HashSet<String> res = new HashSet<>();
+    for (int i = 0; i < 180; i++) {
+      res.add(maggie.getResponse("I'm in Ms. B's class"));
+    }
+
+    String[] names = {"Amelia Grace", "Ann", "Beau", "Braeden", "Caleb", 
+                      "Charlie", "Rivers", "Gaura", "Jack", "Oliver",
+                      "Marshall", "McGowen", "Michael", "Miles", "Trey"};
+    for (int i = 0; i < 15; i++) {
+      assertThat(res).contains("Oh, you're in Ms. B's class!  Do you know " + names[i] + "?");
+    }
+
+    assertThat(res.size()).isAtLeast(15);
+    assertThat(res.add(maggie.getResponse("My teacher is Ms. B"))).isFalse();
+    
   }
 
 }

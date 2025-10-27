@@ -7,7 +7,8 @@ public class Magpie
 {
     /**
      * Pick a default response to use if nothing else fits.
-     * >>> You'll edit this code in Magpie1
+     * >>> You'll edit this code in Magpie1 
+     * >>> You'll refactor this code in Magpie5
      * 
      * @return a non-committal string
      */
@@ -47,7 +48,7 @@ public class Magpie
 
     /**
      * Gives a response to a user statement. 
-     * >>> You'll edit this code in Magpie2, 3, and 4
+     * >>> You'll edit this code in Magpie2, 3, 4, and 5
      * 
      * @param statement the user statement
      * @return a response based on the rules given
