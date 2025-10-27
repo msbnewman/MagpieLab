@@ -11,17 +11,21 @@ Step into that directory.
 Clone your MagpieLab.
 ><code>git clone **insertlablinkhere**</code>  
 
-## Magpie1: Random Response
+## Magpie1: Random Response (2 Steps)
 Open the Magpie.java file.  
 
-Currently the code has four responses, but a few more would make the chatbot better. **Modify the getRandomResponse() method so that it adds two more noncommittal responses.**  
+Take a look at the getRandomResponse() method.  
 
-Currently the code will only print out the first random response, "Interesting." **Change the whichResponse assignment statement in the getRandomResponse() method so it assigns a random number greater than or equal to 0 and less than 6.**  
+1. Currently the code has four responses, but a few more would make the chatbot better. **Modify the getRandomResponse() method so that it adds two more noncommittal responses.**  
 
-## Magpie2: Custom Keyword Response 
+2. Currently the code will only print out the first random response, "Interesting." **Change the whichResponse assignment statement in the getRandomResponse() method so it assigns a random number greater than or equal to 0 and less than 6.**  
+
+## Magpie2: Custom Keyword Response (6 Steps)
 Open the Magpie.java file.  
 
-Now that we have six random responses, let’s make some responses that sound more like human responses. Looking for keywords will help create a more custom response.  
+Take a look at the getResponse() method.
+
+Now that we have six random responses, let’s use the getResponse() method to make some responses that sound more like human responses. Looking for ***keywords*** will help create a more custom response.  
   
 **Modify the getResponse() method to do the following:**  
 
@@ -33,7 +37,8 @@ Now that we have six random responses, let’s make some responses that sound mo
 2. Have it respond “Tell me more about your pets” when the statement contains the word “dog” or “cat.”
   For example, a possible statement and response would be:
 > Statement: I like my cat Mittens.  
-> Response: Tell me more about your pets.  
+> Response: Tell me more about your pets.
+**Bonus: Make it respond to additional pet-related key words: "hamster", "goldfish", "parrot", etc.**  
 3. Have it respond favorably when the statement contains the name of your school.  
   For example, if “the Isidore Newman School” was inputted, a possible statement and response would be: 
 > Statement: I am a 10th grader at the Isidore Newman School.  
@@ -48,4 +53,52 @@ Now that we have six random responses, let’s make some responses that sound mo
   Ideas include: family members (mom, dad, brother, etc); sports; games; etc.
 6. If the user's statement does not contain one of the key phrases described above, have the method call the getRandomResponse() method as before.
 
-## Magpie3: Custom Adaptive Response
+## Magpie3: Custom Adaptive Response (4 Steps)
+Open the StringExplorer.java file.  
+
+Take a look at the findPhrase() method.  
+
+**This step will be hand-written! Get a piece of scratch paper!**   
+
+1. Trace the values of <code>position</code>, <code>before</code>, and <code>after</code> for each the following method calls:
+2. Write code in the transformIWant() method to respond to the phrase “I want”. It should transform statements with the form “I want *something*” into a response with the form “Why do you want *something*?” In doing this transformation, you need to be careful about where you place the check for the key phrase.
+> int pos1 = findPhrase("Listen to your conscience.", "science", 0);
+> int pos2 = findPhrase("Yesterday is today's day before.", "day", 0);
+> int pos3 = findPhrase("This will be his first history class.", "is", 10);
+> int pos4 = findPhrase("I love computer science class.", "computer", 4);
+
+### Copy and paste the entire findPhrase method into Magpie.java
+
+Take a look at the transformIWant() method.  
+
+Statements like “I want cookies,” “I want to hear more,” and “I want to go to Ireland” all have the form “I want *something*.”  
+The response could be, “Why do you want *something*?”  
+2.   
+> Statement: I want to go to Ireland.  
+> Response: Why do you want to go to Ireland?
+
+Take a look at the transformILike() method.  
+
+Statements like “I like cats,” “I like math class,” and “I like Spain” all have the form “I like *something*.” 
+The response could be “What do you like about *something*?”  
+3. Write code in the transformILike() method to respond to the phrase “I like”. It should transform statements with the form “I like *something*” into a response with the form “What do you like about *something*?” In doing this transformation, you need to be careful about where you place the check for the key phrase.  
+> Statement: I like cats.  
+> Response: What do you like about cats?
+
+Return to the getResponse() method.  
+
+4. Edit the getResponse() method to call the transformILike() method when the input string contains "I like" and call the transformIWant() method when the input string contains "I want".
+
+## Magpie4: Improved Adaptive Response
+
+Take a look at the meAndYou() method.
+
+1. Have it respond to statements of the form “I something you” with the restructuring “Why do you something me?” For example:
+   > Statement: I like you.  
+   > Response: Why do you like me?  
+
+Test your code with several examples. Find an example of when this structure does not work well. How can you improve it?
+
+Return to the transformILike() method. Try running it with several examples, including "I like to dance" and "I like to eat ice cream." What do you notice?
+
+2. Revise your transformILike() method to differentiate between statements of the form "I like *something*" and "I like **to** *something*". For the "I like to" statements, make your code use a new response format, like "Why do you like to *something*?"
