@@ -23,7 +23,7 @@ public class MagpieRunner
          System.out.println(response);         
          statement = in.nextLine();          // reads in the users response
       }
-      System.out.println("Bye!");
+      System.out.println("Goodbye!");
       in.close();                            // closes the input file
    }
 }
