@@ -1,6 +1,7 @@
 # MagpieLab
 
 ## Magpie0: Project Setup
+Open a Terminal window on your computer.
 Navigate to your APCS directory on your desktop.  
 ><code>cd Desktop/APCS/</code>  
 
@@ -145,6 +146,7 @@ Take a look at the following statements and responses:
 > <code>I told my mom "Bye!" before I left for science class</code>  
 
 Determine which trigger(s) you'd like to prioritize, and list them in order from highest to lowest priority. Make sure that your getResponse() method is structured to match this priority list!
+
 
 
 
