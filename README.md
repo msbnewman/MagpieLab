@@ -22,7 +22,7 @@ Take a look at the getRandomResponse() method.
 ### getRandomResponse()   
 
 Currently the code has four responses, but a few more would make the chatbot better.  
-1. Modify the getRandomResponse() method so that it adds two more noncommittal responses.  
+1. Modify the getRandomResponse() method so that it adds two more noncommittal responses. Change the <code>NUMBER_OF_RESPONSES</code> to 6.  
 2. Currently the code will only print out the first random response, "Interesting."  Change the <code>whichResponse</code> assignment statement so it assigns a random number greater than or equal to 0 and less than 6. 
 
 ## Magpie2: Custom Keyword Response (6 Steps)
@@ -146,6 +146,7 @@ Take a look at the following statements and responses:
 > <code>I told my mom "Bye!" before I left for science class</code>  
 
 Determine which trigger(s) you'd like to prioritize, and list them in order from highest to lowest priority. Make sure that your getResponse() method is structured to match this priority list!
+
 
 
 
