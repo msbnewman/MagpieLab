@@ -7,6 +7,7 @@ public class Magpie
 {
     /**
      * Pick a default response to use if nothing else fits.
+     * >> You'll edit this code in Magpie1
      * @return a non-committal string
      */
     private String getRandomResponse()
@@ -45,6 +46,7 @@ public class Magpie
 
     /**
      * Gives a response to a user statement
+     * >> You'll edit this code in Magpie2, 3, and 4
      * 
      * @param statement the user statement
      * @return a response based on the rules given
@@ -55,4 +57,38 @@ public class Magpie
         response = getRandomResponse();       
         return response;
     }
+
+    /***************** INSERT findPhrase HERE ********************/
+
+    /**
+     * Gives responses that transform statements containing the phrase "I want"
+     * 
+     * @param statement the user statement
+     * @return a response that transforms the user statement
+     */
+    private String transformIWant(String statement) {
+
+    }
+
+    /**
+     * Gives responses that transform statements containing the phrase "I like"
+     * 
+     * @param statement the user statement
+     * @return a response that transforms the user statement
+     */
+    private String transformILike(String statement) {
+
+    }
+
+    /**
+     * Gives responses that transform statements with the format "I *something* you"
+     * 
+     * @param statement the user statement
+     * @return a response that transforms the user statement. 
+     * Be sure to use the correct pronouns in your response! "you" and "I" will need to be swapped.
+     */
+    private String meAndYou(String statement) {
+
+    }
+
 }
