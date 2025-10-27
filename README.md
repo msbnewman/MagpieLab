@@ -1,7 +1,7 @@
 # MagpieLab
 
 ## Magpie0: Project Setup
-Open a Terminal window on your computer.
+Open a Terminal window on your computer.  
 Navigate to your APCS directory on your desktop.  
 ><code>cd Desktop/APCS/</code>  
 
@@ -197,5 +197,6 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
+
 
 
