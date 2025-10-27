@@ -66,13 +66,15 @@ Take a look at the findPhrase() method.
 **This step will be hand-written! Get a piece of scratch paper!**   
 
 1. Trace the values of <code>position</code>, <code>before</code>, and <code>after</code> for each the following method calls:
-2. Write code in the transformIWant() method to respond to the phrase “I want”. It should transform statements with the form “I want *something*” into a response with the form “Why do you want *something*?” In doing this transformation, you need to be careful about where you place the check for the key phrase.
 > int pos1 = findPhrase("Listen to your conscience.", "science", 0);
 > int pos2 = findPhrase("Yesterday is today's day before.", "day", 0);
 > int pos3 = findPhrase("This will be his first history class.", "is", 10);
 > int pos4 = findPhrase("I love computer science class.", "computer", 4);
 
-#### Copy and paste the entire findPhrase() method into Magpie.java
+### Copy and paste the entire findPhrase() method into Magpie.java. You will need this!
+
+2. 
+
 
 ### transformIWant()
 
@@ -80,7 +82,7 @@ Take a look at the transformIWant() method.
 
 Statements like “I want cookies,” “I want to hear more,” and “I want to go to Ireland” all have the form “I want *something*.”  
 The response could be, “Why do you want *something*?”  
-2.   Write code in the transformIWant() method to respond to “I want something” statements with “Why do you want *something*?” In doing this, you need to be careful about where you place the check -- be sure you understand why. For example:
+2. Write code in the transformIWant() method to respond to the phrase “I want”. It should transform statements with the form “I want *something*” into a response with the form “Why do you want *something*?” In doing this transformation, you need to be careful about where you place the check for the key phrase.
 > Statement: I want to go to Ireland.  
 > Response: Why do you want to go to Ireland?
 
@@ -128,4 +130,5 @@ Return to the transformILike() method. Try running it with several examples, inc
 > I told my mom "Bye!" before I left for science class  
 
 Determine which trigger(s) you'd like to prioritize, and list them in order from highest to lowest priority. Make sure that your getResponse() method is structured to match this priority list!
+
 
