@@ -16,9 +16,11 @@ Open the Magpie.java file.
 
 Take a look at the getRandomResponse() method.  
 
-1. Currently the code has four responses, but a few more would make the chatbot better. **Modify the getRandomResponse() method so that it adds two more noncommittal responses.**  
+### getRandomResponse()   
 
-2. Currently the code will only print out the first random response, "Interesting." **Change the whichResponse assignment statement in the getRandomResponse() method so it assigns a random number greater than or equal to 0 and less than 6.**  
+Currently the code has four responses, but a few more would make the chatbot better.  
+1. Modify the getRandomResponse() method so that it adds two more noncommittal responses.  
+2. Currently the code will only print out the first random response, "Interesting."  Change the <code>whichResponse</code> assignment statement so it assigns a random number greater than or equal to 0 and less than 6. 
 
 ## Magpie2: Custom Keyword Response (6 Steps)
 Open the Magpie.java file.  
@@ -27,7 +29,7 @@ Take a look at the getResponse() method.
 
 Now that we have six random responses, let’s use the getResponse() method to make some responses that sound more like human responses. Looking for ***keywords*** will help create a more custom response.  
   
-**Modify the getResponse() method to do the following:**  
+### getResponse()  
 
 1. Have it respond “Is that your favorite class?” when the statement contains the key words “math” or “science.”  
   For example, a possible statement and response would be: 
@@ -58,6 +60,7 @@ Open the StringExplorer.java file.
 
 Take a look at the findPhrase() method.  
 
+### findPhrase()
 **This step will be hand-written! Get a piece of scratch paper!**   
 
 1. Trace the values of <code>position</code>, <code>before</code>, and <code>after</code> for each the following method calls:
@@ -67,15 +70,19 @@ Take a look at the findPhrase() method.
 > int pos3 = findPhrase("This will be his first history class.", "is", 10);
 > int pos4 = findPhrase("I love computer science class.", "computer", 4);
 
-### Copy and paste the entire findPhrase method into Magpie.java
+#### Copy and paste the entire findPhrase() method into Magpie.java
+
+### transformIWant()
 
 Take a look at the transformIWant() method.  
 
 Statements like “I want cookies,” “I want to hear more,” and “I want to go to Ireland” all have the form “I want *something*.”  
 The response could be, “Why do you want *something*?”  
-2.   
+2.   Write code in the transformIWant() method to respond to “I want something” statements with “Why do you want *something*?” In doing this, you need to be careful about where you place the check -- be sure you understand why. For example:
 > Statement: I want to go to Ireland.  
 > Response: Why do you want to go to Ireland?
+
+### transformILike()
 
 Take a look at the transformILike() method.  
 
@@ -85,21 +92,37 @@ The response could be “What do you like about *something*?”
 > Statement: I like cats.  
 > Response: What do you like about cats?
 
+### getResponse()
+
 Return to the getResponse() method.  
 
 4. Edit the getResponse() method to call the transformILike() method when the input string contains "I like" and call the transformIWant() method when the input string contains "I want".
 
 ## Magpie4: Improved Adaptive Response
 
+Open the Magpie.java file.  
+
 Take a look at the meAndYou() method.
 
-1. Have it respond to statements of the form “I something you” with the restructuring “Why do you something me?” For example:
+### meAndYou()
+
+1. Write code to have it respond to statements of the form “I something you” with the restructuring “Why do you something me?” For example:
    > Statement: I like you.  
    > Response: Why do you like me?  
 
 Test your code with several examples. Find an example of when this structure does not work well. How can you improve it?
 
+### transformILike()
 Return to the transformILike() method. Try running it with several examples, including "I like to dance" and "I like to eat ice cream." What do you notice?
 
 2. Revise your transformILike() method to differentiate between statements of the form "I like *something*" and "I like **to** *something*". For the "I like to" statements, make your code use a new response format, like "Why do you like to *something*?"
 
+
+### getResponse()
+
+3. Take a look at your getResponse() method. Make a list of different possible user inputs that could combine one or more of the possible key words / phrases you're responding to here. For example:
+> I like bringing my dog to the Isidore Newman School  
+> I want to share a coffee with you and my friend Annie  
+> I told my mom "Bye!" before I left for science class  
+
+Determine which trigger(s) you'd like to prioritize, and list them in order from highest to lowest priority. Make sure that your getResponse() method is structured to match this priority list!
