@@ -78,14 +78,14 @@ public class MagpieTest {
     assertThat(maggie.getResponse("").strip()).isEqualTo(str);
     assertThat(maggie.getResponse(" ").strip()).isEqualTo(str);
     assertThat(maggie.getResponse("      ").strip()).isEqualTo(str);
-    assertThat(maggie.getResponse("/t").strip()).isEqualTo(str);
-    assertThat(maggie.getResponse("/n").strip()).isEqualTo(str);
+    assertThat(maggie.getResponse("\t").strip()).isEqualTo(str);
+    assertThat(maggie.getResponse("\n").strip()).isEqualTo(str);
   }
 
   @Test
   @Order(2)
   @DisplayName("Test Magpie3: Custom Adaptive Response correctness")
-  public void magpie1(){
+  public void magpie3(){
     Magpie maggie = new Magpie();
     String str;
     
@@ -116,7 +116,7 @@ public class MagpieTest {
   @Test
   @Order(3)
   @DisplayName("Test Magpie4: Improved Adaptive Response correctness")
-  public void magpie1(){
+  public void magpie4(){
     Magpie maggie = new Magpie();
     String str;
     
