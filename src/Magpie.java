@@ -67,7 +67,7 @@ public class Magpie
      * @return a response that transforms the user statement
      */
     private String transformIWant(String statement) {
-
+        return "";
     }
 
     /**
@@ -77,7 +77,7 @@ public class Magpie
      * @return a response that transforms the user statement
      */
     private String transformILike(String statement) {
-
+        return "";
     }
 
     /**
@@ -88,7 +88,7 @@ public class Magpie
      * Be sure to use the correct pronouns in your response! "you" and "I" will need to be swapped.
      */
     private String meAndYou(String statement) {
-
+        return "";
     }
 
 }
