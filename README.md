@@ -82,7 +82,7 @@ Take a look at the <code>findPhrase()</code> method.
 ### findPhrase()
 **This step will be hand-written! Get a piece of scratch paper!**   
 
-1. Trace the values of <code>position</code>, <code>before</code>, and <code>after</code> for each the following method calls:
+1. Trace the values of <code>position</code>, <code>before</code>, and <code>after</code> through the while loop for each the following method calls:
 > <code>int pos1 = findPhrase("Listen to your conscience.", "science", 0);</code>  
 > <code>int pos2 = findPhrase("Yesterday is today's day before.", "day", 0);</code>  
 > <code>int pos3 = findPhrase("This will be his first history class.", "is", 10);</code>  
@@ -213,6 +213,7 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
+
 
 
 
