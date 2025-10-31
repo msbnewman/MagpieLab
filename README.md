@@ -59,7 +59,7 @@ Now that we have six random responses, let’s use the <code>getResponse()</code
 > <code>Statement: </code>  
 > <code>Response: Say something, please.</code>  
 5. Pick two or more additional key words or phrases of your choice and create a custom response for each of those phrases.  
-  Ideas include: family members (mom, dad, brother, etc); sports; favorite fods; movies; etc.
+  Ideas include: family members (mom, dad, brother, etc); sports; favorite foods; games; movies; etc.
 6. If the user's statement does not contain one of the key phrases described above, have the method call the getRandomResponse() method as before.
 
 ## Magpie3: Custom Adaptive Response (4 Steps)
@@ -201,6 +201,7 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
+
 
 
 
