@@ -4,6 +4,8 @@
 To run the unit tests on your code, use this command in your VSCode terminal:
 > <code>gradle test</code>
 
+All of the autograder tests will run, one after the other. The "test suite" is this list of tests. You can scroll up through the test suite output to view each individual test, whether you passed or failed, and if you failed, which input caused your test to fail.
+
 ## Magpie0: Project Setup
 Open a Terminal window on your computer.  
 Navigate to your APCS directory on your desktop.  
@@ -204,6 +206,7 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
+
 
 
 
