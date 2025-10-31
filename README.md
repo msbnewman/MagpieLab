@@ -12,8 +12,11 @@ Navigate to your APCS directory on your desktop.
 Clone your MagpieLab.
 ><code>git clone **insertlablinkhere**</code>
 
+List the folders in your APCS directory. The names of your magpie lab directory and receipt lab directory should be printed out.
+><code>ls</code>  
+
 Step into your MagpieLab directory.
-><code>cd **LabName**</code>
+><code>cd **magpie-lab-username**</code>
 
 Open VSCode
 ><code>code .</code>
@@ -201,6 +204,7 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
+
 
 
 
