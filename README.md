@@ -6,7 +6,7 @@ To run the unit tests on your code, use this command in your VSCode terminal:
 
 All of the autograder tests will run, one after the other. The "test suite" is this list of tests. You can scroll up through the test suite output to view each individual test, whether you passed or failed, and if you failed, which input caused your test to fail.  
 
-The "test suite" as a whole will not be successful until each individual test succesfully passes, which shouldn't happen until you've finished Magpie5. However, you can use the individual "unit tests" to determine how your code is doing on each individual assignment.  
+The "test suite" as a whole will not be successful until each individual test succesfully passes, which shouldn't happen until you've finished Magpie5. However, you can use the individual "unit tests" to determine how your code is doing on each assignment.  
 
 #### The autograder is not a replacement for testing your own code! After each assignment, you should open MagpieRunner.java, press play, and test your chatbot with different inputs to check its performance.
 
@@ -213,6 +213,7 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
+
 
 
 
