@@ -124,7 +124,7 @@ Take a look at the <code>meAndYou()</code> method.
 
 ### meAndYou()
 
-1. Write code to have it respond to statements of the form “I something you” with the restructuring “Why do you something me?” For example:
+1. Write code to have it respond to statements of the form “I *something* you” with the restructuring “Why do you *something* me?” For example:
 > <code>Statement: I like you.</code>  
 > <code>Response: Why do you like me?</code>  
 
@@ -213,16 +213,6 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
-
-
-
-
-
-
-
-
-
-
 
 
 
