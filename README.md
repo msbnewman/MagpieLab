@@ -8,8 +8,7 @@ All of the autograder tests will run, one after the other. The "test suite" is t
 
 The "test suite" as a whole will not be successful until each individual test succesfully passes, which shouldn't happen until you've finished Magpie5. However, you can use the individual "unit tests" to determine how your code is doing on each assignment.  
 
-### The autograder is not a replacement for testing your own code! 
-#### After each assignment, you should open MagpieRunner.java, press play, and test your chatbot with different inputs to check its performance.
+#### The autograder is not a replacement for testing your own code! After each assignment, you should open MagpieRunner.java, press play, and test your chatbot with different inputs to check its performance.  
 
 The test suite will run each time you push your code to GitHub. A failure will be indicated by a red X, and a success will be indicated by a green check. You should only see a green check after your final lab submission at the end of Magpie5.  
 
@@ -214,6 +213,7 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
+
 
 
 
