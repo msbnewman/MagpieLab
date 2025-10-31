@@ -24,7 +24,7 @@ Open VSCode
 ## Magpie1: Random Response (2 Steps)
 Open the Magpie.java file.  
 
-Take a look at the getRandomResponse() method.  
+Take a look at the <code>getRandomResponse()</code> method.  
 
 ### getRandomResponse()   
 
@@ -204,6 +204,7 @@ For example, say <code>String names = "Abby,Chinma,Jill,Kim,Marcus,Margaret,Rob,
 > <code>"Mrs. Hopper is my G Block teacher"</code>  
 > The method should return one of the names **at random** in the response:  
 > <code>"Oh, you’re in Mrs. Hopper's class!  Do you know Kim?" </code>
+
 
 
 
