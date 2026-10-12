@@ -99,7 +99,7 @@ Return to the getResponse() method.
 
 4. Edit the getResponse() method to call the transformILike() method when the input string contains "I like" and call the transformIWant() method when the input string contains "I want".
 
-## Magpie4: Improved Adaptive Response (3 Steps)
+## Magpie4: Improved Adaptive Response (4 Steps)
 
 Open the Magpie.java file.  
 
@@ -111,13 +111,31 @@ Take a look at the meAndYou() method.
 > <code>Statement: I like you.</code>  
 > <code>Response: Why do you like me?</code>  
 
-Test your code with several examples. Find an example of when this structure does not work well. How can you improve it?
+Test your code with several examples. Find an example of when this structure does not work well. How can you improve it?  
 
 ### transformILike()
 Return to the transformILike() method. Try running it with several examples, including "I like to dance" and "I like to eat ice cream." What do you notice?
 
 2. Revise your transformILike() method to differentiate between statements of the form "I like *something*" and "I like **to** *something*". For the "I like to" statements, make your code use a new response format, like "Why do you like to *something*?"
 
+
+### whyNot()
+Take a look at the whyNot() method.  
+
+We can currently respond to statements with the positive form "I like", "I like to", and "I want". What about the flip side: "I don't like" and "I don't want"?  
+Take a look at the following statements and responses: 
+> <code>Statement: "I don't like sneezing"</code>  
+> <code>Response:  "Why don't you like sneezing?"</code>  
+
+> <code>Statement: "I don't want peanuts"</code>  
+> <code>Response:  "Why don't you want peanuts?"</code>  
+
+> <code>Statement: "I don't need any more glitter"</code>  
+> <code>Response:  "Why don't you need any more glitter?"</code>  
+
+> <code>Statement: "I don't think that's fun."</code>  
+> <code>Response:  "Why don't you think that's fun?"</code>  
+3. Write code in the whyNot() method to transform these statements. Try to be as efficient as possible -- the solution might be simpler than you think!
 
 ### getResponse()
 
