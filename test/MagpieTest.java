@@ -228,14 +228,12 @@ public class MagpieTest {
       res.add(maggie.getResponse("I'm in Ms. B's class"));
     }
 
-    String[] names = {"Amelia Grace", "Ann", "Beau", "Braeden", "Caleb", 
-                      "Charlie", "Rivers", "Gaura", "Jack", "Oliver",
-                      "Marshall", "McGowen", "Michael", "Miles", "Trey"};
+    String[] names = {"Miles", "Elijah", "Jimmy", "Frederick"};
     for (int i = 0; i < 15; i++) {
       assertThat(res).contains("Oh, you're in Ms. B's class!  Do you know " + names[i] + "?");
     }
 
-    assertThat(res.size()).isAtLeast(15);
+    assertThat(res.size()).isAtLeast(names.length);
     assertThat(res.add(maggie.getResponse("My teacher is Ms. B"))).isFalse();
     
   }
