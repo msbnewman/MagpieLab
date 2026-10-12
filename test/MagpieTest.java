@@ -237,5 +237,4 @@ public class MagpieTest {
     assertThat(res.add(maggie.getResponse("My teacher is Ms. B"))).isFalse();
     
   }
-
 }
